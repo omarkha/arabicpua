@@ -1,13 +1,195 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(15, 15, 15);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap");
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  z-index: 100;
+  background: rgb(240, 160, 25, 0.82);
+  box-shadow: 2px 4px 8px rgb(240, 160, 25, 0.82);
+  position: sticky;
+  top: 0;
+  font-weight: bolder;
+  color: rgb(25, 25, 25);
+  height: 63px;
+}
+
+#nav-logo {
+  width: 55px;
+  height: 55px;
+  background-size: cover;
+  border-radius: 21px;
+}
+
+#navbarTogglerDemo03 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#joingnow {
+  padding: 3px;
+  border-radius: 13px;
+  background-color: rgba(15, 15, 25, 0.62);
+  border: 1px solid #fff;
+}
+
+.header {
+  padding: 144px 89px;
+  background-color: rgb(25, 25, 40);
+  color: rgb(230, 230, 230);
+  background-size: cover;
+  background-position-y: -144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header h1 {
+  align-self: flex-start;
+  color: rgb(240, 160, 25);
+  text-shadow: 2px 4px 6px rgb(15, 15, 15);
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.header h3 {
+  color: rgb(230, 230, 230);
+  text-shadow: 2px 4px 6px rgb(15, 15, 15);
+  font-family: "Noto Kufi Arabic", sans-serif;
+  align-self: flex-start;
+}
+
+.purchase {
+  background-image: url("./assets/bg3.jpg");
+  background-size: cover;
+  padding: 89px;
+  background-color: rgb(25, 25, 101);
+  color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.benefits {
+  background: rgb(160, 25, 15);
+  background-image: url("./assets/bg4.jpg");
+  padding: 21px;
+  color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 34px;
+}
+
+.benefits h3 {
+  text-shadow: 2px 4px 6px rgb(15, 15, 15);
+}
+
+.offering {
+  cursor: pointer;
+  width: 233px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 21px;
+  background: rgba(15, 15, 15, 0.62);
+  transition: all 1s ease-in-out;
+  gap: 13px;
+}
+
+.offering:hover {
+  border: 1px solid #fff;
+  border-radius: 21px;
+  background: rgba(0, 0, 0, 0.62);
+  transition: all 1s ease-in-out;
+  color: rgb(240, 160, 25);
+}
+
+.offering .offering-image {
+  width: 144px;
+  height: 144px;
+  background-size: cover;
+  margin: 8px auto;
+}
+
+.offering p {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+.offering .offering-bottom {
+  width: 100%;
+  font-size: 21px;
+  background: rgb(240, 160, 25);
+  color: black;
+}
+
+.offering-top {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  color: rgb(240, 160, 25);
+  font-weight: bolder;
+}
+
+#benefitslist {
+  background: rgba(15, 15, 15, 0.62);
+  width: fit-content;
+  padding: 13px 34px;
+  justify-self: end;
+}
+
+.intro {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  padding: 144px 21px;
+  color: rgb(15, 15, 15);
+
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.intro h3 {
+  color: white;
+  text-shadow: 2px 4px 6px rgb(15, 15, 15);
+}
+.intro p {
+  background-color: rgba(15, 15, 15, 0.62);
+  padding: 55px 13px;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 13px auto;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+button {
+  padding: 5px 21px;
+  background-color: rgb(240, 230, 25);
+  border: none;
+  border-radius: 13px;
+}
+
+button:hover {
+  background-color: rgb(25, 230, 25);
 }
