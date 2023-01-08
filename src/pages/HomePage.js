@@ -18,12 +18,31 @@ const HomePage = () => {
           <iframe
             width="987"
             height="555"
-            src="https://www.youtube.com/embed/cm2o-SwNhU0"
+            src="https://www.youtube.com/embed/DmbUHeMYbWE?controls=0"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+        </div>
+        <div className="freecourse">
+          <div>
+            <h3 className="text-warning">
+              سوف ارسل لك كورس <u>"اساسيات اللعبة"</u> مجاني الان
+            </h3>
+            <h4 className="text-light">
+              لانني متاكد انك سوف تستفاد كثيرا من هذا الكورس
+            </h4>
+          </div>
+          <form>
+            <label>ضع اسمك Enter Your Name</label>
+            <input type="text" placeholder="اسمك هنا..." />
+            <label>ضع ايميلك Enter Your Email</label>
+            <input type="text" placeholder="ايميلك هنا..." />
+            <button type="submit" onClick={(e) => e.preventDefault()}>
+              احصل على الكورس الان
+            </button>
+          </form>
         </div>
         <Parallax bgImage={girl3}>
           <div className="intro">
@@ -58,16 +77,23 @@ const HomePage = () => {
         <div className="benefits">
           <div>
             <h3 className="text-warning">اسرار لن تجدها في اي كورس اخر</h3>
-            <h3>اصبح رجل ذو شخصية قوية</h3>
+            <h3>اصبح رجل ذو شخصية قوية وجذابة</h3>
             <h3>اصبح شخصا مرحا ذو حدس فكاهة</h3>
             <h3>لا تتوتر مجددا او تخاف من التكلم مع النساء</h3>
             <h3>ابني علاقة قوية مع اي انسان بسرعة فائقة</h3>
+            <h3>تعلم كيف تغازل النساء</h3>
           </div>
           <div id="benefitslist">
             <h3 className="text-end">ماذا تستفيد</h3>
             <ul className="text-end">
               <li>
                 اصبح رجل جذاب للنساء <GiCheckMark color="gold" />{" "}
+              </li>
+              <li>
+                تحصل على اي امرأة تريد <GiCheckMark color="gold" />
+              </li>
+              <li>
+                كن واثق, محب ومحترم لنفسك <GiCheckMark color="gold" />
               </li>
               <li>
                 كن لديك حياة زوجية ناجحة <GiCheckMark color="gold" />
@@ -77,9 +103,6 @@ const HomePage = () => {
               </li>
               <li>
                 زوجتك لن تنضر لغيرك <GiCheckMark color="gold" />
-              </li>
-              <li>
-                تحصل على اي امرأة تريد <GiCheckMark color="gold" />
               </li>
               <li>
                 تعلم كيف تجذب اي امرأة <GiCheckMark color="gold" />

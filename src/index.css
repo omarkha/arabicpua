@@ -193,3 +193,39 @@ button {
 button:hover {
   background-color: rgb(25, 230, 25);
 }
+
+.freecourse {
+  padding: 34px;
+  background: url("./assets/chalkboard.jpeg");
+}
+
+.freecourse form {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 377px;
+  margin: 0 auto;
+  gap: 13px;
+  border: 2px dashed #fff;
+  padding: 13px;
+}
+
+.freecourse form input[type="text"] {
+  text-align: center;
+  height: 34px;
+  border-radius: 17px;
+  border: none;
+}
+
+.freecourse form button {
+  text-align: center;
+  height: 34px;
+  border-radius: 17px;
+  border: none;
+  width: 233px;
+  margin: 0 auto;
+}
+
+.freecourse div {
+  margin: 21px auto;
+}
